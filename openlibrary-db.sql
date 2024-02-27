@@ -26,4 +26,4 @@ set client_encoding = 'UTF8';
 -- vaccuum analyze will remove dead tuples and try to regain some space
 -- if you have enough room, you can use vacuum full analyze which will gain the most space back, but it requires enough space on your computer to make a complete second copy of the db
 -- if you add verbose it will explain what it is trying to do.  (vacuum verbose analyze)
-vacuum analyze;
+-- vacuum analyze;
