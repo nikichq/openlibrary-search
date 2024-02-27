@@ -3,7 +3,7 @@
 
 -- spool the output into copy_commands.sql to generate all the copy commands
 \o copy_commands.sql
-select format('\copy %s from ''./data/processed/%s'' delimiter E''\t'' quote ''|'' csv;', name_of_table, filename)
+select format('\copy %s from ''../openlib_old/data/processed/%s'' delimiter E''\t'' quote ''|'' csv;', name_of_table, filename)
 from (
   select id, name_of_table, filename 
   from fileinfo, unnest(filenames) AS filename 
