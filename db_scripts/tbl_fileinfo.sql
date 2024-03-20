@@ -7,4 +7,4 @@ create table fileinfo (
 );
 
 -- load all the file names into the database
-\copy fileinfo from './data/processed/filenames.txt' delimiter E'\t' quote '|' csv;
+\copy fileinfo from '../openlib_old/data/processed/filenames.txt' delimiter E'\t' quote '|' csv;
